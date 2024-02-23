@@ -39,11 +39,32 @@ def display_map(map,player,seed):
     specification: Aloïs Baurant (v1 23/02/24)
     """  
 
-def try_spawn_sheep(player_nbm):
-    """Spawn a sheep if it's needed"""
+def try_spawn_sheep(sheep):
+    """Spawn a sheep if it's needed
+    parameters
+    ----------
+    sheep : player number (bol)
+    
+    notes
+    -----
+    if sheep is 0 -> it is player 1 (blue color)
+    if sheep is 1 -> it is player 2 (red color)
+
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
 
 def look_a_barrier(coordonate):
-    """Look if a sheep can spawn or move on a case."""
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a sheep, a rock, the limit of the maps or nothing. (str) 
+    """
+    
     #think about specifiate the type of the thing that obstructs
 
 def get_seed (coordonate):
