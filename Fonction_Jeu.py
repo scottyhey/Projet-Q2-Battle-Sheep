@@ -55,6 +55,9 @@ def move_sheep (old_coordonate,new_coordonate):
 
 def sheep_graze(coordonate):
     """Graze a grass if the sheep is on this case and the case"""
+
+def translate_orders (messsage):
+    """Translate a string message into a list to be usable for the program"""
     
 map={'rock':{'rock_1':(1,2),'rock_2':(2,5)}}
 
