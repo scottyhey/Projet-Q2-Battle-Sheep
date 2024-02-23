@@ -25,8 +25,19 @@ def is_game_over():
     specification : Heynen Scott-Socrate (v1 20/02/24)"""
 
 
-def display_map(map,player,grass):
-    """display the map from the diction""" 
+def display_map(map,player,seed):
+    """display the map from the diction
+    parameters
+    ----------
+    
+    map : dictonary of the map with the size of the map, rocks, player spawn and seeds (dic)
+    players : dictonary of the différent sheeps and their ownership (dic)
+    grass : dictonary of the grass and their ownership (dic)
+
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """  
 
 def try_spawn_sheep(player_nbm):
     """Spawn a sheep if it's needed"""
