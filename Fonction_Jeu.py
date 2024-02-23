@@ -55,35 +55,65 @@ def try_spawn_sheep(sheep):
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def look_a_barrier(coordonate):
+def look_a_barrier(case_coordonate):
     """Look if a sheep can spawn or move on a case.
     parameters
     -----------
-    coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
     return
     -----------
     type: return if there are a sheep, a rock, the limit of the maps or nothing. (str) 
     """
     
-    #think about specifiate the type of the thing that obstructs
+    #Faudrait peut être l'améliorer pour choisir de vérifier qu'une condition ou plusieurs en fonction de nos besoins
 
 def get_seed (coordonate):
-    """Verify if therer are a seed on the case"""
+    """Verify if therer are a seed on the case""" #je crois pas qu'on en as besoin vu qu'on à la fonction look_a_barrier
 
 def growth_grass():
     """Growth all the grass, in fact add 1 to the life_stats"""
 
 def grass_propagation (coordonate):
-    """Propage the grass around"""
+    """Propage the grass around
+    parameters
+    ----------
+    grass_coordinate : coordonate in x,y of the grass that will grow (tuples)
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
+def delete_emoji (emoji_coordonate):
+    """delete the emoji we need 
+    parameters
+    ----------
+    emoji_coordonate: coordonate in x,y of the emoji we want to delete, in fact remplace by a double space (tuples)
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
 
-def delete_emoji (coordonate):
-    """delete the emoji we need """
-
-def attack_sheep(coordonate):
-    """Attack a sheep if he is near enough to be attack"""
+def attack_sheep(sheep,attack_coordonate):
+    """Attack a sheep if he is near enough to be attack
+    parameters
+    ----------
+    sheep : players sheep who attack (bol)      
+    attack_coordonate: position in x and y where the sheep attacked is (tuples)
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
 
 def move_sheep (old_coordonate,new_coordonate):
-    """Move a sheep if he want to move or if i was attack"""
+    """Move a sheep if he want to move or if i was attack
+    parameters
+    ----------
+    old_coordinate : coordinate in x,y of the sheep where he was (tuples)
+    new_coordinate : coordinate in x,y of the sheep where it will move (tuples)
+    
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
 
 def sheep_graze(coordonate):
     """Graze a grass if the sheep is on this case and the case"""
