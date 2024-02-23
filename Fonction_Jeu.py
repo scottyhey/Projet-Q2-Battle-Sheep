@@ -86,7 +86,8 @@ def delete_emoji (emoji_coordonate):
     """delete the emoji we need 
     parameters
     ----------
-    emoji_coordonate: coordonate in x,y of the emoji we want to delete, in fact remplace by a double space (tuples)
+    emoji_coordonate: coordonate in x,y of the emoji we want to delete, in fact remplace by a double space (tuples or list depend if the emoji is element of 
+    the map or a sheep)
     version
     -------
     specification: Aloïs Baurant (v1 23/02/24)
@@ -107,19 +108,43 @@ def move_sheep (old_coordonate,new_coordonate):
     """Move a sheep if he want to move or if i was attack
     parameters
     ----------
-    old_coordinate : coordinate in x,y of the sheep where he was (tuples)
-    new_coordinate : coordinate in x,y of the sheep where it will move (tuples)
+    old_coordinate : coordinate in x,y of the sheep where he was (list)
+    new_coordinate : coordinate in x,y of the sheep where it will move (list)
     
     version
     -------
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def sheep_graze(coordonate):
-    """Graze a grass if the sheep is on this case and the case"""
+def sheep_graze(sheep, grass_coordonate):
+     """Graze a grass if the sheep is on this case and the case
+    parameters
+    ----------
+    sheep : player shep (bol)
+    grass_coordonate: placement in x and y of the sheep (list)
+    return
+    ------
+    emojii_deleted: coordinate in x and y of the grass that will be eaten (tuples)
+
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
 
 def translate_orders (messsage):
-    """Translate a string message into a list to be usable for the program"""
+    """Translate a string message into a list to be usable for the program
+    parameters
+    ----------
+    message : get the player message (str)
+    
+    return 
+    orders: a list with every separate order. The orders are in the chronologic order (the first one is for the first phase) (list)
+    ------
+
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
     
 map={'rock':{'rock_1':(1,2),'rock_2':(2,5)}}
 
