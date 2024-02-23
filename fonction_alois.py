@@ -1,3 +1,5 @@
+# sheep is bol. Players 1 = 0 and player_2 = 1
+
 def get_distance():
     """Get the distance (distane between two entites)"""
 
@@ -22,17 +24,50 @@ def is_game_over():
 
     version
     -------
-    specification : Heynen Scott-Socrate (v1 20/02/24)"""
+    specification : Heynen Scott-Socrate (v1 20/02/24)
+    """
 
+def display_map(map,player,seed):
+    """display the map from the diction
+    parameters
+    ----------
+    
+    map : file .bsh (str)
+    players : get players spawn poitn (int)
+    grass : get the seed pos (int)
 
-def display_map(map,player,grass):
-    """display the map from the diction""" 
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """ 
 
-def try_spawn_sheep(player_nbm):
-    """Spawn a sheep if it's needed"""
+def try_spawn_sheep(sheep):
+    """Spawn a sheep if it's needed
+    parameters
+    ----------
+    sheep : player number (bol)
+    
+    notes
+    -----
+    if sheep is 0 -> it is player 1 (blue color)
+    if sheep is 1 -> it is player 2 (red color)
 
-def look_a_barrier(coordinate):
-    """Look if a sheep can spawn or move on a case."""
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
+
+def look_a_barrier(move_coordinate_x, move_coordinate_y):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    ----------
+    move_coordinate_x : player movement in x (int)
+    move_coordinate_y : player movemenet in y (int)
+
+    version
+    -------
+    specification: Aloïs Baurant (v1 23/02/24)
+    """
     #think about specifiate the type of the thing that obstructs
 
 def get_seed (seed_coordinate_x,seed_coordinate_y):
