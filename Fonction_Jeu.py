@@ -1,5 +1,17 @@
-def get_distance():
-    """Get the distance (distane between two entites)"""
+def get_distance(entity1_coordonate,entity2_coordonate):
+    """Get the distance (distane between two entites)
+    parameters
+    -----------
+    entity1_coordonate: the coordonate of the first entity (list or tuples)
+    entity2_coordonate: the coordonate of the second entity (list or tuples)
+    returns
+    -----------
+    distance: the distance between two entites (int)
+    
+    version
+    -------
+    specification: Remacle Thomas (v1 24/02/24)"""
+    
 
 def create_map_dictio():
     """create a dictionary with every usefull informations about the map creation from the #map file#
@@ -62,17 +74,28 @@ def look_a_barrier(case_coordonate):
     case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
     return
     -----------
-    type: return if there are a sheep, a rock, the limit of the maps or nothing. (str) 
+    type: return if there are a sheep, a seed, a rock, the limit of the maps or nothing. (str) 
     """
     
     #Faudrait peut être l'améliorer pour choisir de vérifier qu'une condition ou plusieurs en fonction de nos besoins
 
 def get_seed (coordonate):
     """Verify if therer are a seed on the case""" #je crois pas qu'on en as besoin vu qu'on à la fonction look_a_barrier
-
+def set_grass (coordonate):
+    """Set a grass a the sheep position if the seed is neutral
+    parameters
+    -------------
+    coordonate: coordonate of the sheep
+    version
+    -------
+    specification: Remacle Thomas (v1 24/02/24)"""
+    
 def growth_grass():
-    """Growth all the grass, in fact add 1 to the life_stats"""
-
+    """Growth all the grass, in fact add 1 to the life_stats and call grass_propagation if the live_stats is 11
+    version
+    -------
+    specification: Remacle Thomas (v1 24/02/24)"""
+    
 def grass_propagation (coordonate):
     """Propage the grass around
     parameters
