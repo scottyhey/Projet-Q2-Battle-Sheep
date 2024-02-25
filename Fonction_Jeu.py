@@ -115,6 +115,16 @@ def delete_emoji (emoji_coordonate):
     -------
     specification: Aloïs Baurant (v1 23/02/24)
     """
+def create_emoji (emoji_coordonate,emoji):
+    """spawn the emoji we need 
+    parameters
+    ----------
+    emoji_coordonate: coordonate in x,y of the emoji we want to create (tuples or list depend if the emoji is element of the map or a sheep)
+    emoji: the emoji we want to spawn (str)
+    version
+    -------
+    specification: Remacle Thomas (v1 25/02/24)
+    """
 
 def attack_sheep(sheep,attack_coordonate):
     """Attack a sheep if he is near enough to be attack
@@ -139,12 +149,12 @@ def move_sheep (old_coordonate,new_coordonate):
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def sheep_graze(sheep, grass_coordonate):
+def sheep_graze(sheep, sheep_coordonate):
      """Graze a grass if the sheep is on this case and the case
     parameters
     ----------
-    sheep : player shep (bol)
-    grass_coordonate: placement in x and y of the sheep (list)
+    sheep : player sheep (bol)
+    sheep_coordonate: placement in x and y of the sheep (list)
     return
     ------
     emojii_deleted: coordinate in x and y of the grass that will be eaten (tuples)
