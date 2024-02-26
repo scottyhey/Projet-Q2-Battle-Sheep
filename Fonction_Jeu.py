@@ -64,7 +64,7 @@ def try_spawn_sheep(sheep):
 
     version
     -------
-    specification: Aloïs Baurant (v1 23/02/24)
+    specification: Heynen Scott-Socrate (v1 23/02/24)
     """
 
 def set_grass (coordonate):
@@ -89,7 +89,7 @@ def grass_propagation (coordonate):
     grass_coordinate : coordonate in x,y of the grass that will grow (tuples)
     version
     -------
-    specification: Aloïs Baurant (v1 23/02/24)
+    specification: Heynen Scott-Socrate (v1 23/02/24)
     """
 def delete_emoji (emoji_coordonate):
     """delete the emoji we need 
@@ -99,7 +99,7 @@ def delete_emoji (emoji_coordonate):
     the map or a sheep)
     version
     -------
-    specification: Aloïs Baurant (v1 23/02/24)
+    specification: Heynen Scott-Socrate (v1 23/02/24)
     """
 def create_emoji (emoji_coordonate,emoji):
     """spawn the emoji we need 
