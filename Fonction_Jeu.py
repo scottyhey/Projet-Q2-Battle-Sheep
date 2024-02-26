@@ -79,8 +79,6 @@ def look_a_barrier(case_coordonate):
     
     #Faudrait peut être l'améliorer pour choisir de vérifier qu'une condition ou plusieurs en fonction de nos besoins
 
-def get_seed (coordonate):
-    """Verify if therer are a seed on the case""" #je crois pas qu'on en as besoin vu qu'on à la fonction look_a_barrier
 def set_grass (coordonate):
     """Set a grass a the sheep position if the seed is neutral
     parameters
@@ -164,10 +162,11 @@ def sheep_graze(sheep, sheep_coordonate):
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def translate_orders (messsage):
+def translate_orders (player,messsage):
     """Translate a string message into a list to be usable for the program
     parameters
     ----------
+    player : The player where the message from (bool)
     message : get the player message (str)
     
     return 
@@ -178,6 +177,42 @@ def translate_orders (messsage):
     -------
     specification: Aloïs Baurant (v1 23/02/24)
     """
+
+def look_rock(case_coordonate):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a rock, the limit of the maps or nothing. (str) 
+    """
+def look_sheep(case_coordonate):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a sheep the limit of the maps or nothing. (str) 
+    """
+
+def look_seed(case_coordonate):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a seed, the limit of the maps or nothing. (str) 
+    """
+def game_function ():
+    """Read the list created by traslated orders and call other function to play the game
+    version 
+    ---------------
+    specification: Remacle Thomas (V1 26/02/24)"""
+    
+    
     
 map={'rock':{'rock_1':(1,2),'rock_2':(2,5)}}
 
