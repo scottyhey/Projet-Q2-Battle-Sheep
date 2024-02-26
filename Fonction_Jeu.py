@@ -211,12 +211,50 @@ def game_function ():
     version 
     ---------------
     specification: Remacle Thomas (V1 26/02/24)"""
-    
-    
-    
-map={'rock':{'rock_1':(1,2),'rock_2':(2,5)}}
 
-for rocks in map['rock']:
-    my_tuples=map['rock'][rocks]
+def look_rock(case_coordonate):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a rock, the limit of the maps or nothing. (str) 
+    """
+def look_sheep(case_coordonate):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a sheep the limit of the maps or nothing. (str) 
+    """
 
-#get_sheep_life:()
+def look_seed(case_coordonate):
+    """Look if a sheep can spawn or move on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    return
+    -----------
+    type: return if there are a seed, the limit of the maps or nothing. (str) 
+    """
+
+def look_grass(case_coordonate):
+    """Look if a grass can spawn on a case.
+    parameters
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to grow the grass (tuples)
+    return
+    -----------
+    type: return if the grass can grow or not (str) 
+    """
+def look_empty(case_coordonate):
+    """Look the case where we want to go or set up something is outside the map
+    -----------
+    case_coordonate: The coordonate x and y of the case we wanted to set up something (tuples)
+    return
+    -----------
+    type: return if the case is empty (str) 
+    """
