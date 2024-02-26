@@ -1,12 +1,12 @@
-def get_distance(entity1_coordonate,entity2_coordonate):
-    """Get the distance (distane between two entites)
+def get_distance(entity1_coordinates,entity2_coordinates):
+    """Get the distance (distance between two entities)
     parameters
     -----------
-    entity1_coordonate: the coordonate of the first entity (list or tuples)
-    entity2_coordonate: the coordonate of the second entity (list or tuples)
+    entity1_coordinates: the coordinates of the first entity (list or tuples)
+    entity2_coordinates: the coordinates of the second entity (list or tuples)
     returns
     -----------
-    distance: the distance between two entites (int)
+    distance: the distance between two entities (int)
     
     version
     -------
@@ -14,7 +14,7 @@ def get_distance(entity1_coordonate,entity2_coordonate):
     
 
 def create_map_dictio():
-    """create a dictionary with every usefull informations about the map creation from the #map file#
+    """create a dictionary with every usefull informations about the map creation from the map file
 
     notes
     -----
@@ -26,33 +26,32 @@ def create_map_dictio():
     """
 
 def is_game_over():
-    """check if game is over
+    """check if the game is over
 
     returns
     -------
-    true if the game is over, false otherwise (bool)
+    True if the game is over, False otherwise (bool)
 
     version
     -------
     specification : Heynen Scott-Socrate (v1 20/02/24)"""
 
-
+#
 def display_map(map,player,seed):
-    """display the map from the diction
+    """display the map from the dictionary of create_map_dictio()
     parameters
     ----------
-    
-    map : dictonary of the map with the size of the map, rocks, player spawn and seeds (dic)
-    players : dictonary of the différent sheeps and their ownership (dic)
-    grass : dictonary of the grass and their ownership (dic)
+    map : dictionary of the map with the size of the map, rocks, player spawn and seeds (dic)
+    players : dictionary of the different sheeps and their ownership (dic)
+    grass : dictionary of the grass and their ownership (dic)
 
     version
     -------
     specification: Aloïs Baurant (v1 23/02/24)
     """  
-
+#
 def try_spawn_sheep(sheep):
-    """Spawn a sheep if it's needed
+    """Spawn a sheep if possible
     parameters
     ----------
     sheep : player number (bol)
@@ -67,11 +66,11 @@ def try_spawn_sheep(sheep):
     specification: Heynen Scott-Socrate (v1 23/02/24)
     """
 
-def set_grass (coordonate):
-    """Set a grass a the sheep position if the seed is neutral
+def set_grass (coordinates):
+    """Set a grass at the sheep position if the seed is neutral
     parameters
     -------------
-    coordonate: coordonate of the sheep
+    coordinates: coordinates of the sheep
     version
     -------
     specification: Remacle Thomas (v1 24/02/24)"""
@@ -82,11 +81,11 @@ def growth_grass():
     -------
     specification: Remacle Thomas (v1 24/02/24)"""
     
-def grass_propagation (coordonate):
-    """Propage the grass around
+def grass_propagation (coordinates):
+    """Plant grass ont the all 8 box surroundings
     parameters
     ----------
-    grass_coordinate : coordonate in x,y of the grass that will grow (tuples)
+    coordinates : coordinates (x,y) of the grass that will grow (tuples)
     version
     -------
     specification: Heynen Scott-Socrate (v1 23/02/24)
@@ -101,46 +100,46 @@ def delete_emoji (emoji_coordonate):
     -------
     specification: Heynen Scott-Socrate (v1 23/02/24)
     """
-def create_emoji (emoji_coordonate,emoji):
+def create_emoji (emoji_coordinate,emoji):
     """spawn the emoji we need 
     parameters
     ----------
-    emoji_coordonate: coordonate in x,y of the emoji we want to create (tuples or list depend if the emoji is element of the map or a sheep)
-    emoji: the emoji we want to spawn (str)
+    emoji_coordinate: coordinate in x,y of the emoji wanted to be create (tuples or list depend if the emoji is element of the map or a sheep)
+    emoji: the emoji wanted to be spawn (str)
     version
     -------
     specification: Remacle Thomas (v1 25/02/24)
     """
 
-def attack_sheep(sheep,attack_coordonate):
-    """Attack a sheep if he is near enough to be attack
+def attack_sheep(sheep,attack_coordinates):
+    """Attack a sheep if he is near enough to be attacked
     parameters
     ----------
     sheep : players sheep who attack (bol)      
-    attack_coordonate: position in x and y where the sheep attacked is (tuples)
+    attack_coordinates: position in x and y where the sheep attacked is (tuples)
     version
     -------
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def move_sheep (old_coordonate,new_coordonate):
-    """Move a sheep if he want to move or if i was attack
+def move_sheep (old_coordinates,new_coordinates):
+    """Move a sheep or attack if an another sheep is already there
     parameters
     ----------
-    old_coordinate : coordinate in x,y of the sheep where he was (list)
-    new_coordinate : coordinate in x,y of the sheep where it will move (list)
+    old_coordinates : coordinate in x,y of the sheep where he was (list)
+    new_coordinates : coordinate in x,y of the sheep where it will move (list)
     
     version
     -------
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def sheep_graze(sheep, sheep_coordonate):
-     """Graze a grass if the sheep is on this case and the case
+def sheep_graze(sheep, sheep_coordinates):
+     """Graze a grass if the sheep is on this case
     parameters
     ----------
     sheep : player sheep (bol)
-    sheep_coordonate: placement in x and y of the sheep (list)
+    sheep_coordinates: coordinates in x,y of the sheep (list)
     return
     ------
     emojii_deleted: coordinate in x and y of the grass that will be eaten (tuples)
@@ -167,7 +166,7 @@ def translate_orders (player,messsage):
     """
 
 def game_function ():
-    """Read the list created by traslated orders and call other function to play the game
+    """Read the list created by traslated_orders() and call others functions to play the game
     version 
     ---------------
     specification: Remacle Thomas (V1 26/02/24)"""
@@ -185,7 +184,7 @@ def look_rock(case_coordonate):
     specification: Arthur Yernaux (v1 23/02/24)
     """
 def look_sheep(case_coordonate):
-    """Look if a sheep can spawn or move on a case.
+    """Look if a sheep can spawn or move on a box.
     parameters
     -----------
     case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
@@ -197,11 +196,11 @@ def look_sheep(case_coordonate):
     specification: Arthur Yernaux (v1 23/02/24)
     """
 
-def look_seed(case_coordonate):
+def look_seed(case_coordinates):
     """Look if a sheep can spawn or move on a case.
     parameters
     -----------
-    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
+    case_coordinates: The coordinates (x,y) of the box wanted to be seen (tuples)
     return
     -----------
     type: return if there are a seed, the limit of the maps or nothing. (str)
@@ -210,25 +209,25 @@ def look_seed(case_coordonate):
     specification: Arthur Yernaux (v1 23/02/24)
     """
 
-def look_grass(case_coordonate):
-    """Look if a grass can spawn on a case.
+def look_grass(coordinates):
+    """Look if a grass can spawn on a box.
     parameters
     -----------
-    case_coordonate: The coordonate x and y of the case we wanted to grow the grass (tuples)
+    coordinate: The coordinates (x,y) of the box we wanted to grow the grass (tuples)
     return
     -----------
-    type: return if the grass can grow or not (str)
+    type: return True if the grass can spawn, return False otherwise (bool)
     version
     -------
     specification: Arthur Yernaux (v1 23/02/24)
     """
-def look_void(case_coordonate):
-    """Look the case where we want to go or set up something is outside the map
+def check_void(coordinates):
+    """Look if the box is outside of the map
     -----------
-    case_coordonate: The coordonate x and y of the case we wanted to set up something (tuples)
+    coordinates: The coordinates (x,y) of the box to check (tuples)
     return
     -----------
-    type: return if the case is empty (str) 
+    type: return True if the box is outside of the map, return False otherwise (bool) 
     version
     -------
     specification: Arthur Yernaux (v1 23/02/24)
