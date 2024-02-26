@@ -191,7 +191,10 @@ def look_rock(case_coordonate):
     case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
     return
     -----------
-    type: return if there are a rock, the limit of the maps or nothing. (str) 
+    type: return if there are a rock, the limit of the maps or nothing. (str)
+    version
+    -------
+    specification: Arthur Yernaux (v1 23/02/24)
     """
 def look_sheep(case_coordonate):
     """Look if a sheep can spawn or move on a case.
@@ -201,6 +204,9 @@ def look_sheep(case_coordonate):
     return
     -----------
     type: return if there are a sheep the limit of the maps or nothing. (str) 
+    version
+    -------
+    specification: Arthur Yernaux (v1 23/02/24)
     """
 
 def look_seed(case_coordonate):
@@ -210,7 +216,10 @@ def look_seed(case_coordonate):
     case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
     return
     -----------
-    type: return if there are a seed, the limit of the maps or nothing. (str) 
+    type: return if there are a seed, the limit of the maps or nothing. (str)
+    version
+    -------
+    specification: Arthur Yernaux (v1 23/02/24)
     """
 
 def look_grass(case_coordonate):
@@ -220,7 +229,10 @@ def look_grass(case_coordonate):
     case_coordonate: The coordonate x and y of the case we wanted to grow the grass (tuples)
     return
     -----------
-    type: return if the grass can grow or not (str) 
+    type: return if the grass can grow or not (str)
+    version
+    -------
+    specification: Arthur Yernaux (v1 23/02/24)
     """
 def look_void(case_coordonate):
     """Look the case where we want to go or set up something is outside the map
@@ -229,4 +241,7 @@ def look_void(case_coordonate):
     return
     -----------
     type: return if the case is empty (str) 
+    version
+    -------
+    specification: Arthur Yernaux (v1 23/02/24)
     """
