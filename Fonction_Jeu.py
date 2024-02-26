@@ -67,18 +67,6 @@ def try_spawn_sheep(sheep):
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def look_a_barrier(case_coordonate):
-    """Look if a sheep can spawn or move on a case.
-    parameters
-    -----------
-    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
-    return
-    -----------
-    type: return if there are a sheep, a seed, a rock, the limit of the maps or nothing. (str) 
-    """
-    
-    #Faudrait peut être l'améliorer pour choisir de vérifier qu'une condition ou plusieurs en fonction de nos besoins
-
 def set_grass (coordonate):
     """Set a grass a the sheep position if the seed is neutral
     parameters
