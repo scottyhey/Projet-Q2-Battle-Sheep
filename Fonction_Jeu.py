@@ -178,34 +178,6 @@ def translate_orders (player,messsage):
     specification: Aloïs Baurant (v1 23/02/24)
     """
 
-def look_rock(case_coordonate):
-    """Look if a sheep can spawn or move on a case.
-    parameters
-    -----------
-    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
-    return
-    -----------
-    type: return if there are a rock, the limit of the maps or nothing. (str) 
-    """
-def look_sheep(case_coordonate):
-    """Look if a sheep can spawn or move on a case.
-    parameters
-    -----------
-    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
-    return
-    -----------
-    type: return if there are a sheep the limit of the maps or nothing. (str) 
-    """
-
-def look_seed(case_coordonate):
-    """Look if a sheep can spawn or move on a case.
-    parameters
-    -----------
-    case_coordonate: The coordonate x and y of the case we wanted to see (tuples)
-    return
-    -----------
-    type: return if there are a seed, the limit of the maps or nothing. (str) 
-    """
 def game_function ():
     """Read the list created by traslated orders and call other function to play the game
     version 
@@ -250,7 +222,7 @@ def look_grass(case_coordonate):
     -----------
     type: return if the grass can grow or not (str) 
     """
-def look_empty(case_coordonate):
+def look_void(case_coordonate):
     """Look the case where we want to go or set up something is outside the map
     -----------
     case_coordonate: The coordonate x and y of the case we wanted to set up something (tuples)
